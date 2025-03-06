@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyApi.Controllers
 {
     [Route("api/[controller]")]
+
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -13,12 +14,14 @@ namespace MyApi.Controllers
             var a = 10;
             var c = 9;
             var yup = 1000;
+            var creya = 8000;
             return Ok(new { id, name = "example" });
         }
 
         [HttpPost]
         public IActionResult CreateUser([FromBody] string name)
         {
+            var created=8000;
             return Ok(new { id = 1, name });
         }
     }
