@@ -9,6 +9,8 @@ namespace MyApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetUser([FromQuery] int id)
         {
+
+            var a = 10;
             return Ok(new { id, name = "example" });
         }
 
