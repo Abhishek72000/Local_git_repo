@@ -12,6 +12,7 @@ namespace MyApi.Controllers
 
             var a = 10;
             var c = 9;
+            var yup = 1000;
             return Ok(new { id, name = "example" });
         }
 
