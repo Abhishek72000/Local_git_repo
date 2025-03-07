@@ -11,7 +11,7 @@ namespace MyApi.Controllers
         public IActionResult EvenAndOdd([FromQuery] int id)
         {
 
-           if (id % 2 == 0)
+           if (id % 4 == 0)
         {
             Console.WriteLine($"{number} is Even.");
         }
