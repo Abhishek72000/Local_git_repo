@@ -16,6 +16,7 @@ namespace MyApi.Controllers
             var yup = 1000;
             var creya = 8004;
             var abhi = 777;
+            float test = 1.21;
             return Ok(new { id, name = "example" });
         }
 
