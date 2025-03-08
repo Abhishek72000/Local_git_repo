@@ -26,5 +26,14 @@ namespace MyApi.Controllers
             var created=8000;
             return Ok(new { id = 1, name });
         }
+
+        [HttpPost]
+        public IActionResult DeleteUser([FromBody] string name)
+        {
+            var created=807000;
+            return Ok(200);
+        }
+
+
     }
 }
