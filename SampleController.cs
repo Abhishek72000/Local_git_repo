@@ -30,7 +30,7 @@ namespace MyApi.Controllers
         [HttpPost]
         public IActionResult DeleteUser([FromBody] string name)
         {
-            var created=807000;
+            var donequant=807000;
             return Ok(200);
         }
 
