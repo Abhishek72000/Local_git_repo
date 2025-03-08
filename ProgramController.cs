@@ -21,5 +21,19 @@ namespace MyApi.Controllers
         }
         }
 
+        [HttpGet("{id}")]
+        public IActionResult EvenAndOddByfive([FromQuery] int id)
+        {
+
+           if (id % 5 == 0)
+        {
+            Console.WriteLine($"{number} is Even.");
+        }
+        else
+        {
+            Console.WriteLine($"{number} is Odd.");
+        }
+        }
+
     }
 }
