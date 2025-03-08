@@ -38,7 +38,7 @@ namespace MyApi.Controllers
         public IActionResult goUser([FromQuery] int id)
         {
 
-           if (id % 5 == 0)
+           if (id % 10 == 0)
         {
             Console.WriteLine($"{number} is Even.");
         }
