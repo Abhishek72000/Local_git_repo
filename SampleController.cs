@@ -42,6 +42,7 @@ namespace MyApi.Controllers
         [HttpPost] 
         public IActionResult Test1() 
         { 
+            string name = "abhishek";
             return Ok(200); 
         }
 
