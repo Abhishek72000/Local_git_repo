@@ -39,6 +39,15 @@ namespace MyApi.Controllers
             return Ok(302); 
         }
 
+        [HttpPost] 
+        public IActionResult Test1() 
+        { 
+            return Ok(402); 
+        }
+
+
+
+
 
     }
 }
