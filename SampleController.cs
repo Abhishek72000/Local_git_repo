@@ -42,7 +42,7 @@ namespace MyApi.Controllers
         [HttpPost] 
         public IActionResult Test1() 
         { 
-            return Ok(502); 
+            return Ok(200); 
         }
 
 
