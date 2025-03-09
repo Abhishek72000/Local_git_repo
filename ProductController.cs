@@ -14,7 +14,7 @@ namespace MyApi.Controllers
 
            if (id % 199 == 0)
         {
-            Console.WriteLine($"{number} is Even.");
+            Console.WriteLine($"{number} is test.");
         }
         else
         {
