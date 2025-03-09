@@ -21,6 +21,12 @@ namespace MyApi.Controllers
             Console.WriteLine($"{number} is Odd.");
         }
         }
+        [HttpPost]
+        public IActionResult CreateUser([FromBody] string name)
+        {
+            var created=8000;
+            return Ok(new { id = 1, name });
+        }
 
     }
 }
