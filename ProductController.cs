@@ -18,6 +18,17 @@ namespace MyApi.Controllers
         }
         
         }
+        
+        [HttpGet("{id}")]
+        public IActionResult getUser([FromQuery] int id)
+        {
+
+           if (id % 2 == 0)
+        {
+            Console.WriteLine($"{number} is EVEN.");
+        }
+        
+        }
 
         
     }
