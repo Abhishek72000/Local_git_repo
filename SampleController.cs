@@ -33,19 +33,7 @@ namespace MyApi.Controllers
             var donequant=807000;
             return Ok(200);
         }
-        [HttpPost] 
-        public IActionResult Test() 
-        { 
-            return Ok(302); 
-        }
-
-        [HttpPost] 
-        public IActionResult Test1() 
-        { 
-            string name = "abhishek";
-            return Ok(200); 
-        }
-
+        
 
 
 
