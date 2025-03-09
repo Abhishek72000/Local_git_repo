@@ -12,7 +12,7 @@ namespace MyApi.Controllers
         public IActionResult EvenAndOddByfive([FromQuery] int id)
         {
 
-           if (id % 5 == 0)
+           if (id % 6 == 0)
         {
             Console.WriteLine($"{number} is Even.");
         }
@@ -24,7 +24,7 @@ namespace MyApi.Controllers
         [HttpPost]
         public IActionResult CreateUser([FromBody] string name)
         {
-            var created=8000;
+            var created=80066;
             return Ok(new { id = 1, name });
         }
 
