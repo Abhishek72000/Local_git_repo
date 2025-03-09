@@ -29,6 +29,16 @@ namespace MyApi.Controllers
         }
         
         }
+        [HttpGet("{id}")]
+        public IActionResult getAuthor([FromQuery] int id)
+        {
+
+           if (id % 2 == 0)
+        {
+            Console.WriteLine($"{number} is odd.");
+        }
+        
+        }
 
         
     }
