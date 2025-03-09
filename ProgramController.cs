@@ -25,7 +25,7 @@ namespace MyApi.Controllers
         public IActionResult EvenAndOddByfive([FromQuery] int id)
         {
 
-           if (id % 5 == 0)
+           if (id % 5 == 1)
         {
             Console.WriteLine($"{number} is Even.");
         }

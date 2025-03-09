@@ -27,12 +27,7 @@ namespace MyApi.Controllers
             return Ok(new { id = 1, name });
         }
 
-        [HttpPost]
-        public IActionResult DeleteUser([FromBody] string name)
-        {
-            var donequant=807000;
-            return Ok(200);
-        }
+        
         
 
 
