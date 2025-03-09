@@ -12,7 +12,7 @@ namespace MyApi.Controllers
         public IActionResult getProduct([FromQuery] int id)
         {
 
-           if (id % 203 == 0)
+           if (id % 204 == 0)
         {
             Console.WriteLine($"{number} is EVEN.");
         }
