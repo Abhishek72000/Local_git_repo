@@ -18,7 +18,7 @@ namespace MyApi.Controllers
         }
         else
         {
-            Console.WriteLine($"{number} is Odd.");
+            Console.WriteLine($"{number} is Even'.");
         }
         }
 
