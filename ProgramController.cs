@@ -47,19 +47,6 @@ namespace MyApi.Controllers
             Console.WriteLine($"{number} is Odd.");
         }
         }
-        [HttpGet("{id}")]
-        public IActionResult comeUser([FromQuery] int id)
-        {
-
-           if (id % 8 == 0)
-        {
-            Console.WriteLine($"{number} is Even.");
-        }
-        else
-        {
-            Console.WriteLine($"{number} is Odd.");
-        }
-        }
-
+        
     }
 }
