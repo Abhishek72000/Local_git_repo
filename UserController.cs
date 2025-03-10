@@ -9,17 +9,16 @@ namespace MyApi.Controllers
     {
         
         [HttpGet("{id}")]
-        public IActionResult EvenAndOddByfive([FromQuery] int id)
+        public ActionResult<User> GetUser(int id)
         {
+            var user = _users.FirstOrDefault(u => u.Id == id);
+            
+            if (user == null)
+            {
+                return NotFound(new { Message = "User not found." });
+            }
 
-           if (id % 5 == 0)
-        {
-            Console.WriteLine($"{number} is Even.");
-        }
-        else
-        {
-            Console.WriteLine($"{number} is odd'.");
-        }
+            return Ok(user);
         }
 
     }
