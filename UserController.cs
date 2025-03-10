@@ -9,15 +9,11 @@ namespace MyApi.Controllers
     {
         
         [HttpGet("{id}")]
-        public ActionResult<User> GetUser1(int id)
+        public ActionResult<User> GetUser(int id)
         {
             var user = _users.FirstOrDefault(u => u.Id == id);
             
-            if (user == null)
-            {
-                return NotFound(new { Message = "User not found." });
-            }
-
+            
             return Ok(user);
         }
 
