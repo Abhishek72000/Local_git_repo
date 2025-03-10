@@ -18,18 +18,7 @@ namespace MyApi.Controllers
         }
 
     }
-    [HttpGet("getprogram/{id}")]
-        public IActionResult GetProgram(int id)
-        {
-            var program = _programs.FirstOrDefault(p => p.Id == id);
-
-            if (program == null)
-            {
-                return NotFound(new { Message = "Program not found." });
-            }
-
-            return Ok(program);
-        }
+    
 
 
         [HttpGet("getauthor/{id}")]
