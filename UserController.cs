@@ -9,7 +9,7 @@ namespace MyApi.Controllers
     {
         
         [HttpGet("{id}")]
-        public ActionResult<User> GetUser(int id)
+        public ActionResult<User> GetUser1(int id)
         {
             var user = _users.FirstOrDefault(u => u.Id == id);
             
